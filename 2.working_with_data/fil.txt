@@ -1,0 +1,57 @@
+Problem 17: Write a program reverse.py to print lines of a file in reverse order.
+
+$ cat she.txt
+She sells seashells on the seashore;
+The shells that she sells are seashells I'm sure.
+So if she sells seashells on the seashore,
+I'm sure that the shells are seashore shells.
+
+$ python reverse.py she.txt
+I'm sure that the shells are seashore shells.
+So if she sells seashells on the seashore,
+The shells that she sells are seashells I'm sure.
+She sells seashells on the seashore;
+
+Problem 18: Write a program to print each line of a file in reverse order.
+
+Problem 19: Implement unix commands head and tail. The head and tail commands take a file as argument and prints its first and last 10 lines of the file respectively.
+
+Problem 20: Implement unix command grep. The grep command takes a string and a file as arguments and prints all lines in the file which contain the specified string.
+
+$ python grep.py she.txt sure
+The shells that she sells are seashells I'm sure.
+I'm sure that the shells are seashore shells.
+
+Problem 21: Write a program wrap.py that takes filename and width as aruguments and wraps the lines longer than width.
+
+$ python wrap.py she.txt 30
+I'm sure that the shells are s
+eashore shells.
+So if she sells seashells on t
+he seashore,
+The shells that she sells are
+seashells I'm sure.
+She sells seashells on the sea
+shore;
+
+Problem 22: The above wrap program is not so nice because it is breaking the line at middle of any word. Can you write a new program wordwrap.py that works like wrap.py, but breaks the line only at the word boundaries?
+
+$ python wordwrap.py she.txt 30
+I'm sure that the shells are
+seashore shells.
+So if she sells seashells on
+the seashore,
+The shells that she sells are
+seashells I'm sure.
+She sells seashells on the
+seashore;
+
+Problem 23: Write a program center_align.py to center align all lines in the given file.
+
+$ python center_align.py she.txt
+  I'm sure that the shells are seashore shells.
+    So if she sells seashells on the seashore,
+The shells that she sells are seashells I'm sure.
+       She sells seashells on the seashore;
+
+
